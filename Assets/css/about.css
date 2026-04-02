@@ -1,0 +1,164 @@
+/* ─── About: Quote Section ───────────────────────────────── */
+.about-quote-section {
+  background: var(--white);
+  padding: 160px 40px 140px;
+}
+
+.about-quote-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.about-quote {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 32px;
+  quotes: none;
+}
+
+.about-attribution {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray);
+  text-align: right;
+  margin-bottom: 100px;
+}
+
+.about-body {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* ─── Where IBT Stands Section ───────────────────────────── */
+.ibt-stands-section {
+  background: var(--white);
+  padding: 80px 60px 160px;
+}
+
+.ibt-stands-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ibt-stands-heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 80px;
+  padding-left: 60px;
+}
+
+.ibt-stands-img {
+  width: 100%;
+  display: block;
+}
+
+/* ─── Values Section ─────────────────────────────────────── */
+.values-section {
+  background: var(--white);
+  padding: 80px 60px 100px;
+}
+
+.values-container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.values-heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--black);
+  letter-spacing: -0.5px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.value-card {
+  background: #f7f7f7;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+  min-height: 200px;
+}
+
+.value-card-body {
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.45;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.hl-green  { color: #00b050; font-weight: 400; }
+.hl-purple { color: #9b30ff; font-weight: 400; }
+.hl-orange { color: #ff7300; font-weight: 400; }
+.hl-teal   { color: #00aacc; font-weight: 400; }
+
+/* ─── Leadership Section ─────────────────────────────────── */
+.leadership-section {
+  background: var(--white);
+  padding: 80px 60px 80px;
+}
+
+.leadership-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.leadership-heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 48px;
+  text-align: left;
+  letter-spacing: -0.5px;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 32px;
+}
+
+.leader-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.leader-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--blue);
+  margin-bottom: 2px;
+}
+
+.leader-arrow {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue);
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.leader-role {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.5;
+}
