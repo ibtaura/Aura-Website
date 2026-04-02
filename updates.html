@@ -8,12 +8,12 @@
   <meta name="keywords" content="IBT Aura updates, Aura Clarus news, wearable health news, IBT Aura announcements" />
   <meta name="author" content="IBT Aura Private Limited" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.ibtaura.co.in/updates.html" />
+  <link rel="canonical" href="https://www.ibtaura.co.in/updates" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Updates — IBT Aura" />
   <meta property="og:description" content="Latest news and announcements from IBT Aura Private Limited." />
-  <meta property="og:url" content="https://www.ibtaura.co.in/updates.html" />
+  <meta property="og:url" content="https://www.ibtaura.co.in/updates" />
   <meta property="og:site_name" content="IBT Aura" />
   <meta property="og:image" content="https://www.ibtaura.co.in/LOGOBLACK.svg" />
 
@@ -44,7 +44,7 @@
     .updates-label {
       font-size: 11px;
       font-weight: 600;
-      color: #111;
+      color: #007fff;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       margin-bottom: 12px;
@@ -62,7 +62,7 @@
     .updates-subtitle {
       font-size: 1rem;
       font-weight: 300;
-      color: #666;
+      color: #646464;
       max-width: 480px;
       line-height: 1.65;
       margin-bottom: 60px;
@@ -78,16 +78,12 @@
       display: flex;
       flex-direction: column;
       border: 1px solid #e8e8e8;
-      border-radius: 12px;
-      padding: 28px;
+      border-radius: 28px;
+      padding: 32px;
       text-decoration: none;
       color: inherit;
-      transition: box-shadow 0.18s, transform 0.18s;
-    }
-
-    .blog-card:hover {
-      box-shadow: 0 6px 28px rgba(0,0,0,0.08);
-      transform: translateY(-2px);
+      /* Squircle-style smoothing via large radius + subtle shadow at rest */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
 
     .blog-card-meta {
@@ -99,13 +95,13 @@
 
     .blog-card-category {
       display: inline-block;
-      background: #111;
+      background: linear-gradient(160deg, #5ca8ff 0%, #2a7fff 100%);
       color: #fff;
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      padding: 3px 12px;
+      padding: 4px 14px;
       border-radius: 20px;
     }
 
@@ -127,10 +123,10 @@
     .blog-card-subtitle {
       font-size: 0.9rem;
       font-weight: 300;
-      color: #666;
+      color: #646464;
       line-height: 1.6;
       flex: 1;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
     .blog-card-footer {
@@ -149,10 +145,11 @@
     .blog-card-tag {
       font-size: 11px;
       font-weight: 400;
-      color: #555;
-      border: 1px solid #ddd;
+      color: #007fff;
+      border: 1px solid #cce4ff;
       border-radius: 20px;
       padding: 0.25rem 0.75rem;
+      background: #f0f7ff;
     }
 
     .blog-card-read {
