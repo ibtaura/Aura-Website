@@ -29,12 +29,141 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    .blog-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+
+    .blog-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--blue, #4f6ef7);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .blog-section-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+      color: var(--black, #0d0d0d);
+      margin-bottom: 16px;
+    }
+
+    .blog-section-subtitle {
+      font-size: 17px;
+      color: var(--gray, #6b7280);
+      max-width: 520px;
+      line-height: 1.65;
+      margin-bottom: 60px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 28px;
+    }
+
+    .blog-card {
+      background: #ffffff;
+      border: 1px solid #e8e8ec;
+      border-radius: 16px;
+      padding: 32px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .blog-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.09);
+      transform: translateY(-3px);
+    }
+
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .blog-card-category {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--blue, #4f6ef7);
+      background: rgba(79, 110, 247, 0.08);
+      padding: 4px 10px;
+      border-radius: 50px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .blog-card-date {
+      font-size: 12px;
+      color: var(--gray, #9ca3af);
+    }
+
+    .blog-card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--black, #0d0d0d);
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
+
+    .blog-card-subtitle {
+      font-size: 14px;
+      color: var(--gray, #6b7280);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 24px;
+    }
+
+    .blog-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .blog-card-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .blog-card-tag {
+      font-size: 11px;
+      color: var(--gray, #6b7280);
+      background: #f3f4f6;
+      padding: 3px 9px;
+      border-radius: 50px;
+    }
+
+    .blog-card-read {
+      font-size: 12px;
+      color: var(--gray, #9ca3af);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 640px) {
+      .blog-grid { grid-template-columns: 1fr; }
+      .blog-section { padding: 48px 20px 80px; }
+      .blog-section-title { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
 
   <!-- Announcement Bar -->
   <div class="announcement-bar">
-    <p>Pre orders will open soon. Limited early access pricing available.</p>
+    <p>Pre orders will open soon. Limited early access pricing available. All terms and conditions apply.</p>
   </div>
 
   <!-- Navigation -->
@@ -48,59 +177,35 @@
     </div>
   </header>
 
-  <!-- Updates Section -->
-  <section class="updates-page-section">
-    <div class="updates-page-inner">
-      <p class="updates-page-label">Updates</p>
-      <h1 class="updates-page-title">Page Under Construction</h1>
-      <p class="updates-page-subtitle">We are working on this section. Check back soon for the latest news and updates.</p>
-      <a href="index.html" class="updates-page-back">← Back to Home</a>
+  <!-- Blog Section -->
+  <section>
+    <div class="blog-section">
+      <p class="blog-section-label">From the team</p>
+      <h1 class="blog-section-title">Updates &amp; Insights</h1>
+      <p class="blog-section-subtitle">Perspectives on wearable health technology, the Aura Clarus platform, and the future of continuous health monitoring.</p>
+
+      <div class="blog-grid">
+
+        <a href="blog/wearable-health-monitoring-market-2025-2026.html" class="blog-card">
+          <div class="blog-card-meta">
+            <span class="blog-card-category">Health Tech</span>
+            <span class="blog-card-date">April 2025</span>
+          </div>
+          <h2 class="blog-card-title">Wearable Health Monitoring: Market Potential in 2025 and the Road Ahead</h2>
+          <p class="blog-card-subtitle">From consumer fitness trackers to clinical-grade sensors — the numbers behind the boom and what investors and innovators can expect through 2026 and beyond.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-tags">
+              <span class="blog-card-tag">Wearables</span>
+              <span class="blog-card-tag">Market Analysis</span>
+              <span class="blog-card-tag">2025 Trends</span>
+            </div>
+            <span class="blog-card-read">5 min read</span>
+          </div>
+        </a>
+
+      </div>
     </div>
   </section>
-
-  <style>
-    .updates-page-section {
-      min-height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--white);
-    }
-    .updates-page-inner {
-      text-align: center;
-    }
-    .updates-page-label {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--blue);
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-    .updates-page-title {
-      font-size: 56px;
-      font-weight: 700;
-      letter-spacing: -2px;
-      line-height: 1.1;
-      color: var(--black);
-      margin-bottom: 20px;
-    }
-    .updates-page-subtitle {
-      font-size: 18px;
-      color: var(--gray);
-      max-width: 420px;
-      margin: 0 auto 40px;
-      line-height: 1.6;
-    }
-    .updates-page-back {
-      font-size: 14px;
-      color: var(--blue);
-      text-decoration: none;
-    }
-    .updates-page-back:hover {
-      text-decoration: underline;
-    }
-  </style>
 
   <script src="assets/js/main.js"></script>
 </body>
