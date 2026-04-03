@@ -509,53 +509,133 @@ body {
 }
 
 /* ─── Responsive ──────────────────────────────────────────── */
-@media (max-width: 900px) {
-  .hero-title {
-    font-size: 64px;
-    letter-spacing: -2px;
+@media (max-width: 768px) {
+  /* Announcement bar wraps on small screens */
+  .announcement-bar {
+    height: auto;
+    padding: 8px 0;
   }
 
-  .product-inner {
-    grid-template-columns: 1fr;
-    gap: 48px;
+  .announcement-bar p {
+    font-size: 11px;
   }
 
-  .product-image {
-    justify-content: center;
-  }
-
+  /* Navbar */
   .navbar-inner {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-title {
-    font-size: 48px;
-    letter-spacing: -1px;
-  }
-
-  .hero-subtitle {
-    font-size: 16px;
-  }
-
-  .product-title {
-    font-size: 28px;
-  }
-
-  .product-subtitle {
-    font-size: 18px;
+    padding: 0 16px;
   }
 
   .nav-links {
     gap: 20px;
   }
 
-  .hero {
-    padding: 60px 24px;
+  /* Split section stacks vertically */
+  .split-section {
+    flex-direction: column;
+    min-height: auto;
+    gap: 8px;
   }
 
-  .product-section {
-    padding: 60px 24px;
+  .split-panel {
+    min-height: 420px;
+    padding: 32px 24px 24px;
+  }
+
+  .split-light {
+    padding-bottom: 0;
+  }
+
+  .split-light .split-bottom {
+    padding-bottom: 24px;
+  }
+
+  .split-title {
+    font-size: 52px;
+    letter-spacing: -2px;
+  }
+
+  .split-center-logo img {
+    width: 380px;
+    height: 380px;
+  }
+
+  .split-product-img {
+    width: 65%;
+  }
+
+  /* Modal */
+  .modal {
+    margin: 16px;
+    padding: 36px 24px;
+    max-width: calc(100vw - 32px);
+    border-radius: 16px;
+  }
+
+  /* Footer */
+  .footer-legal-section {
+    padding: 40px 20px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-bar p {
+    font-size: 10px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 11px;
+  }
+
+  .split-panel {
+    min-height: 380px;
+    padding: 28px 20px 20px;
+  }
+
+  .split-title {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+  }
+
+  .split-subtitle {
+    font-size: 14px;
+  }
+
+  .split-center-logo img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .split-product-img {
+    width: 72%;
+  }
+
+  .split-btn {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+
+  .split-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal {
+    padding: 28px 20px;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+
+  .footer-legal-section {
+    padding: 32px 16px 24px;
+  }
+
+  .legal-block p {
+    font-size: 12px;
   }
 }

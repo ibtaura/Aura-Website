@@ -164,3 +164,103 @@
   color: var(--black);
   line-height: 1.5;
 }
+
+/* ─── About: Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .about-quote-section {
+    padding: 80px 24px 60px;
+  }
+
+  .about-quote {
+    font-size: 26px;
+    letter-spacing: -0.2px;
+    margin-bottom: 24px;
+  }
+
+  .about-attribution {
+    font-size: 15px;
+    margin-bottom: 48px;
+  }
+
+  .ibt-stands-section {
+    padding: 60px 24px 80px;
+  }
+
+  .ibt-stands-heading {
+    font-size: 28px;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .values-section {
+    padding: 60px 24px 60px;
+  }
+
+  .values-heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 28px;
+    min-height: auto;
+    border-radius: 24px;
+  }
+
+  .value-card-body {
+    font-size: 21px;
+  }
+
+  .leadership-section {
+    padding: 60px 24px 60px;
+  }
+
+  .leadership-heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 32px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-quote-section {
+    padding: 60px 20px 48px;
+  }
+
+  .about-quote {
+    font-size: 21px;
+  }
+
+  .about-attribution {
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
+
+  .about-body {
+    font-size: 14px;
+  }
+
+  .values-heading {
+    font-size: 24px;
+  }
+
+  .value-card-body {
+    font-size: 18px;
+  }
+
+  .leadership-heading {
+    font-size: 24px;
+  }
+
+  .leader-role {
+    font-size: 14px;
+  }
+}
