@@ -224,7 +224,7 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 48%;
+  width: 68%;
   pointer-events: none;
 }
 
@@ -560,7 +560,7 @@ body {
   }
 
   .split-product-img {
-    width: 65%;
+    width: 45%;
   }
 
   /* Modal */
@@ -610,7 +610,7 @@ body {
   }
 
   .split-product-img {
-    width: 72%;
+    width: 40%;
   }
 
   .split-btn {
