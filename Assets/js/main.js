@@ -1,4 +1,32 @@
 
+// ── Navbar scroll collapse ─────────────────────────────────
+const navbar     = document.querySelector('.navbar');
+const navMenuBtn = document.getElementById('nav-menu-btn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    navbar.classList.add('scrolled');
+    navbar.classList.remove('open');
+  } else {
+    navbar.classList.remove('scrolled', 'open');
+  }
+}, { passive: true });
+
+navMenuBtn && navMenuBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  navbar.classList.toggle('open');
+});
+
+document.addEventListener('click', (e) => {
+  if (navbar.classList.contains('open') && !navbar.contains(e.target)) {
+    navbar.classList.remove('open');
+  }
+});
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => navbar.classList.remove('open'));
+});
+
 // Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-link');
